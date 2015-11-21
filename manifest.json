@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "LLLink",
+  "version": "1.0",
+  "description": "A Better Way To Find A URL To DOWNLOAD!!!",
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "LLLink.html"
+  },
+  "permissions": [
+    "bookmarks",
+    "tabs","http://*/*","https://*/*",
+    "history"
+    ] ,
+    "background": { "scripts": ["jquery-1.9.1.min.js", "background.js"] },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*","https://*/*"],
+        "js": ["jquery-1.9.1.min.js", "content_script.js"]
+      }
+    ]
+}
