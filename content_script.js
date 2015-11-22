@@ -1,5 +1,4 @@
   var link = document.getElementsByTagName('a');
-  alert("aassa");
   var str = '';
   var result_1 = new Array();
   var result_2 = new Array();
