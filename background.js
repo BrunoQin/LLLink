@@ -10,8 +10,5 @@ chrome.runtime.onMessage.addListener(  function(request, sender, sendResponse) {
   myRes1=request.res_1;
   myRes2=request.res_2;
   myRes3=request.res_3;
-  console.log(myRes1);
-  console.log(myRes2);
-  console.log(myRes3);
 
 });
